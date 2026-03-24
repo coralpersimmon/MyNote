@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.mynote.mapper.NoteMapper;
 import com.mynote.model.NoteModel;
-import com.mynote.model.NoteMapper;
 
 @Service
 public class NoteService {
@@ -21,17 +21,10 @@ public class NoteService {
         return noteMapper.findByUserId(userId);
     }
 
-    /*
-    // 依"流水號-Id"取得筆記
-    public NoteModel findById(Integer id) {
-        return noteMapper.findById(id);
-    }
-    */
-
     // 新增筆記
     public NoteModel create(NoteModel note) {
         noteMapper.insert(note);
-        System.out.println("新增筆記ID:" + note.id);
+        System.out.println("Created note ID: " + note.getId());
         return note;
     }
 
@@ -43,7 +36,7 @@ public class NoteService {
 
     // 刪除筆記
     public void delete(Integer id) {
-    	System.out.println("刪除筆記ID:" + id);
+        System.out.println("Deleting note ID: " + id);
         noteMapper.deleteById(id);
     }
 }
