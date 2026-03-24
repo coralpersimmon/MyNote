@@ -1,10 +1,15 @@
 package com.mynote.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class NoteModel {
-    public Integer id;
-    public Integer userId;
-    public String title;
-    public String content;
-    public String createdAt;
-    public String updatedAt;
+    private Integer id;
+    private Integer userId;
+    private String title;
+    private String content;
+    private String createdAt;
+    private String updatedAt;
 }

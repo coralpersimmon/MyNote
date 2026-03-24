@@ -1,7 +1,8 @@
-package com.mynote.model;
+package com.mynote.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
+import com.mynote.model.NoteModel;
 
 @Mapper
 public interface NoteMapper {

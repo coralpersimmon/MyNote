@@ -1,0 +1,9 @@
+* text=auto
+/MyNote/mvnw text eol=lf
+*.cmd text eol=crlf
+
+# Keep GitHub language statistics focused on application code.
+*.html linguist-vendored
+*.css linguist-vendored
+*.sql linguist-vendored
+*.ttf binary linguist-vendored
