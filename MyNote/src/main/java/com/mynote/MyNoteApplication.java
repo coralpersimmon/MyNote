@@ -8,7 +8,6 @@ public class MyNoteApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MyNoteApplication.class, args);
-		System.out.print("Here is the starting point.");
 	}
 
 }

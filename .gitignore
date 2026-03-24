@@ -45,3 +45,6 @@ replay_pid*
 # OS
 .DS_Store
 Thumbs.db
+
+# Local config
+MyNote/src/main/resources/application.properties
